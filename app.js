@@ -14,5 +14,11 @@ const message = 'This is a test message';
 const button = document.getElementById('btn');
 
 button.addEventListener("click", function() {
-    console.log("クリック");
+      console.log("クリック");
+});
+
+const button = document.getElementById("myButton");
+
+button.addEventListener(click, function() {
+  console.log("ボタンがクリックされました");
 });
