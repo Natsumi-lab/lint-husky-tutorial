@@ -8,6 +8,13 @@
   },
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
